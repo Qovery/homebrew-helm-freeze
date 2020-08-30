@@ -2,16 +2,16 @@
 class HelmFreeze < Formula
   desc "Freeze your charts in the wished versions"
   homepage ""
-  version "0.1"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Qovery/helm-freeze/releases/download/v0.1/helm-freeze_0.1_darwin_amd64.tar.gz"
-    sha256 "06e425b2c38822b0200fa4b2611c047a916d67f1db553a851adb13058c3de09a"
+    url "https://github.com/Qovery/helm-freeze/releases/download/v0.1.1/helm-freeze_0.1.1_darwin_amd64.tar.gz"
+    sha256 "6dd86c1048ec543e0f67de58f8eb2c95ef505ff0f08e68f44e7a718d2741129c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.1/helm-freeze_0.1_linux_amd64.tar.gz"
-      sha256 "babcb7f465b827270c3fef58133f8d5f1b2ca77038c07ce1d29fed391eae9534"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.1.1/helm-freeze_0.1.1_linux_amd64.tar.gz"
+      sha256 "e03db31b66fbd40790af796bf43a9b922e06b907fdace23408cf755ed0c69320"
     end
   end
 
