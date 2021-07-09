@@ -5,28 +5,28 @@
 class HelmFreeze < Formula
   desc "Freeze your charts in the wished versions"
   homepage ""
-  version "0.4.0"
+  version "0.4.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.0/helm-freeze_0.4.0_darwin_amd64.tar.gz"
-      sha256 "faafa9bc9fbb04da7a8f8da51e128a2efec4486579ecb849cd177669361235fd"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_darwin_amd64.tar.gz"
+      sha256 "3ca2d2d26f4fde4b83124b727ddd7b01d8a513cf09a42cb887f5a4cc05393830"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.0/helm-freeze_0.4.0_darwin_arm64.tar.gz"
-      sha256 "08ca7d694acbb32d6d845b3fa99b34a066a27fb93d2e572d69e5a71e00824349"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_darwin_arm64.tar.gz"
+      sha256 "7dd4ab83f972271e515fad27d9d794ed56f5b71d836635974ce2a5edc641ca82"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.0/helm-freeze_0.4.0_linux_amd64.tar.gz"
-      sha256 "ba3d2ba126e967e2d806af3eb82d776b8ea68d99ff0016c9e60d4b145483f94b"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_linux_amd64.tar.gz"
+      sha256 "39f6321b15322ef7fffa8d4a0f0714e2da7fbf899cc14792c63e5b3b5adccfe4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.0/helm-freeze_0.4.0_linux_arm64.tar.gz"
-      sha256 "5f397d25daec3ba9a6fd7bad75568050e517679d4093d869d1692f37e588a69b"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_linux_arm64.tar.gz"
+      sha256 "89685fbd7e6e86edb416838a1f4c1695bfd8ded4a95ffdd5eaf14b9921a48d5a"
     end
   end
 
