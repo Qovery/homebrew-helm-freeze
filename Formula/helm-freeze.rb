@@ -5,32 +5,43 @@
 class HelmFreeze < Formula
   desc "Freeze your charts in the wished versions"
   homepage ""
-  version "0.4.1"
-  bottle :unneeded
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_darwin_amd64.tar.gz"
-      sha256 "3ca2d2d26f4fde4b83124b727ddd7b01d8a513cf09a42cb887f5a4cc05393830"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.5.0/helm-freeze_0.5.0_darwin_amd64.tar.gz"
+      sha256 "31961172f13e9b1bb11b2c51e6e68ae3481b14cd80b6108a8eab9fb3cef83534"
+
+      def install
+        bin.install "helm-freeze"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_darwin_arm64.tar.gz"
-      sha256 "7dd4ab83f972271e515fad27d9d794ed56f5b71d836635974ce2a5edc641ca82"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.5.0/helm-freeze_0.5.0_darwin_arm64.tar.gz"
+      sha256 "78e5f3c4c433124a226653cdeb3d12ef983497a3e9512d98acb2151006216304"
+
+      def install
+        bin.install "helm-freeze"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_linux_amd64.tar.gz"
-      sha256 "39f6321b15322ef7fffa8d4a0f0714e2da7fbf899cc14792c63e5b3b5adccfe4"
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.5.0/helm-freeze_0.5.0_linux_amd64.tar.gz"
+      sha256 "7de51f2058884c21493d1dee091a9eb40d7f888b62dd9fc1981f1e708f9ad2cd"
+
+      def install
+        bin.install "helm-freeze"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Qovery/helm-freeze/releases/download/v0.4.1/helm-freeze_0.4.1_linux_arm64.tar.gz"
-      sha256 "89685fbd7e6e86edb416838a1f4c1695bfd8ded4a95ffdd5eaf14b9921a48d5a"
-    end
-  end
+      url "https://github.com/Qovery/helm-freeze/releases/download/v0.5.0/helm-freeze_0.5.0_linux_arm64.tar.gz"
+      sha256 "15b007e748b4ac56f60b07e8a3193bce33950c552fca916e4cbc0b39d40bcd05"
 
-  def install
-    bin.install "helm-freeze"
+      def install
+        bin.install "helm-freeze"
+      end
+    end
   end
 end
